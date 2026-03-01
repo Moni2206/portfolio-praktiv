@@ -19,7 +19,8 @@ body {
     margin-top: 1rem;
   }
   .world {
-    background-image: url("/img/backgroundMobil.png");
+    background-image: url("img/backgroundMobil.png");
+
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -216,7 +217,7 @@ html {
     height: 110vh;
     margin: auto;
 
-    background-image: url("/img/bagbrundDesk-fjel.png");
+    background-image: url("img/bagbrundDesk-fjel.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
