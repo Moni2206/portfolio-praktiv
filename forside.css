@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #041e43;
+}
+
+@media (max-width: 800px) {
+  /* no additional changes needed for small screens; kept for legacy */
+  .world {
+    width: 100%;
+  }
+  .monika {
+    width: 58%;
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+  .world {
+    background-image: url("/img/backgroundMobil.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 31vh;
+  }
+  h1,
+  h2 {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+
+  h1,
+  li,
+  p,
+  h2,
+  h3,
+  .qual-title,
+  span {
+    color: white;
+  }
+
+  a {
+    color: rgb(182, 233, 255);
+  }
+  .info_box {
+    width: 100%;
+  }
+  .info_boxContent,
+  ul {
+    padding: 2rem;
+  }
+  .illustration {
+    width: 45%;
+
+    margin-left: 12rem;
+    background-size: cover;
+    margin-top: -14rem;
+  }
+  .Erfaring {
+    margin-top: -70rem;
+    margin-left: 53rem;
+  }
+  div {
+    padding: 5.6px;
+  }
+  li {
+    padding: 4px;
+  }
+  .illustration_tre {
+    width: 50%;
+    margin-left: 6rem;
+  }
+  .projects {
+    width: 70%;
+    display: flex;
+
+    margin-left: 3rem;
+  }
+  .button {
+    display: inline-block;
+    padding: 9px 15px;
+    margin-left: 3.7rem;
+    margin-top: 1rem;
+    border: 1px solid white;
+    border-radius: 12px;
+    background-color: #8a66ae;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 2rem;
+  }
+  /*KVALIFIKATIONER  */
+  .qual-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+  }
+  .skills {
+    max-width: 250px;
+    margin: auto;
+    font-family: sans-serif;
+    margin-bottom: 3rem;
+  }
+
+  .skill {
+    margin-bottom: 15px;
+  }
+
+  .skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .bar {
+    width: 100%;
+    height: 20px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .level {
+    height: 100%;
+    background: #4f46e5;
+    border-radius: 10px;
+  }
+
+  /* Niveauer */
+  .html {
+    width: 90%;
+  }
+  .css {
+    width: 90%;
+  }
+  .js {
+    width: 70%;
+  }
+  .react {
+    width: 60%;
+  }
+  .next {
+    width: 60%;
+  }
+  .drago {
+    width: 110%;
+    background-size: cover;
+    grid-row: 3;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+  }
+  .section_dragon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 44px;
+  }
+  .section_h3 {
+    grid-row: 1/4;
+    grid-column: 2/4;
+  }
+  .section_kontakt {
+    grid-row: 1/4;
+    grid-column: 1/4;
+    margin: 2rem;
+  }
+  #kontakt {
+    margin-left: 4rem;
+  }
+  .section_ul {
+    grid-row: 3;
+    grid-column: 2/3;
+  }
+  .kontakt {
+    display: inline-block;
+    padding: 13px 29px;
+
+    margin-top: 2rem;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: #6b1fb7;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+}
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .img_monika {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 7rem;
+  }
+  .monika {
+    width: 72%;
+    margin-top: 7rem;
+    margin-left: 5rem;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    height: 110vh;
+    margin: auto;
+
+    background-image: url("/img/bagbrundDesk-fjel.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -10;
+
+    border-radius: 2px;
+  }
+
+  .hero a {
+    color: white;
+    text-decoration: none;
+    border: 5px solid #fff;
+    background-color: #6b1fb7;
+    padding: 10px 25px;
+    border-radius: 30px;
+    justify-self: center;
+    align-self: center;
+    transition: 0.3s ease;
+    font-size: larger;
+  }
+
+  .hero a:hover {
+    border: 5px solid #4009e5;
+    background: white;
+    color: #041e43;
+  }
+  .me {
+    margin-left: 7rem;
+    font-size: xx-large;
+  }
+
+  /* Placering */
+
+  #heroMe {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 15rem;
+    margin-bottom: 5rem;
+  }
+
+  #heroProjekter {
+    grid-column: 3;
+    grid-row: 1;
+    margin-right: -4rem;
+    margin-bottom: 25rem;
+  }
+
+  #heroKvalifikationer {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 33rem;
+    margin-right: -6rem;
+  }
+
+  #heroKontakt {
+    grid-column: 4;
+    grid-row: 2;
+    margin-bottom: 8rem;
+    margin-right: 10rem;
+  }
+
+  .hero_title {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-size: 3rem;
+  }
+  /* no additional changes needed for small screens; kept for legacy */
+  .world {
+    width: 100%;
+  }
+
+  h1,
+  h2 {
+    font-size: xx-large;
+    padding-top: 3rem;
+    margin-left: 11rem;
+  }
+
+  h1,
+  li,
+  p,
+  h2,
+  h3,
+  .qual-title,
+  span {
+    color: white;
+  }
+
+  a {
+    color: rgb(182, 233, 255);
+  }
+  .info_box {
+    width: 100%;
+  }
+  .info_boxContent,
+  ul {
+    padding: 2rem;
+  }
+  .illustration {
+    width: 55%;
+    margin-left: 28rem;
+    background-size: cover;
+    margin-top: -40rem;
+  }
+  .Erfaring {
+    margin-top: -7rem;
+  }
+  body {
+    margin-left: 5rem;
+  }
+
+  div {
+    padding: 5.6px;
+  }
+  li {
+    padding: 4px;
+  }
+  .illustration_tre {
+    width: 50%;
+    margin-left: 20rem;
+    margin-top: 2rem;
+  }
+  .projects {
+    width: 80%;
+    display: flex;
+
+    margin-left: 3rem;
+  }
+  .button {
+    display: inline-block;
+    padding: 11px 22px;
+    margin-left: 7.5rem;
+    margin-top: 2rem;
+    border: 4px solid white;
+    border-radius: 12px;
+    background-color: #8a66ae;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 3rem;
+  }
+  #om {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .om-h2 {
+    margin-top: -5rem;
+  }
+  .info_boxContent {
+    grid-column: 1;
+  }
+  .Erfaring {
+    grid-column: 2;
+    margin-left: 11rem;
+  }
+
+  #projekter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #kvalifikationer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 6rem;
+  }
+  .section.qualifications {
+    margin-top: 1rem;
+  }
+  /*KVALIFIKATIONER  */
+  .qual-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+  }
+  .skills {
+    max-width: 250px;
+    margin: auto;
+    font-family: sans-serif;
+  }
+
+  .skill {
+    margin-bottom: 15px;
+  }
+
+  .skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .bar {
+    width: 100%;
+    height: 20px;
+    background: #e5e5e5;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .level {
+    height: 100%;
+    background: #4f46e5;
+    border-radius: 10px;
+  }
+
+  /* Niveauer */
+  .html {
+    width: 90%;
+  }
+  .css {
+    width: 90%;
+  }
+  .js {
+    width: 70%;
+  }
+  .react {
+    width: 60%;
+  }
+  .next {
+    width: 60%;
+  }
+  .drago {
+    width: 50%;
+    background-size: cover;
+    grid-row: 3;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+  }
+  .section_dragon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 44px;
+  }
+  .section_h3 {
+    grid-row: 1/4;
+    grid-column: 2/4;
+    margin-top: 3rem;
+  }
+  .section_ul {
+    grid-row: 3;
+    grid-column: 2/3;
+  }
+  .kontakt {
+    display: inline-block;
+    padding: 20px 65px;
+    margin-top: 2rem;
+    border: 3px solid white;
+    border-radius: 12px;
+    background-color: #6b1fb7;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+
+  #kontakt {
+    margin-left: 7rem;
+  }
+  .section_kontakt {
+    grid-column: 2;
+  }
+  .kontaktButton {
+    margin-top: 9rem;
+  }
+}
